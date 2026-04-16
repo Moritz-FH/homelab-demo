@@ -1,0 +1,6 @@
+services:
+  bentopdf:
+    image: ghcr.io/alam00000/bentopdf:${BENTOPDF_VER}
+    container_name: bentopdf
+    hostname: bentopdf
+    restart: unless-stopped
