@@ -1,0 +1,7 @@
+name: homelab-demo
+
+include:
+  - ./networks.yaml
+  # Services
+  - ./bentopdf/compose.yaml
+  - ./jellyfin/compose.yaml

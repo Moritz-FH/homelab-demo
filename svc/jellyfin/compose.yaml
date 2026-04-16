@@ -1,0 +1,14 @@
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:${JELLYFIN_VER}
+    container_name: jellyfin
+    hostname: jellyfin
+    restart: unless-stopped
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+    volumes:
+      - ${CONFIG_DIR}/jellyfin:/config
+      - ${DATA_DIR}/jellyfin/movies:/movies:ro
+      - ${DATA_DIR}/jellyfin/tvshows:/tvshows:ro
+      - ${DATA_DIR}/jellyfin/music:/music:ro

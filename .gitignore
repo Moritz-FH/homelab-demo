@@ -1,0 +1,8 @@
+data/**
+.config/**
+# GITKEEP
+!.config/example.env
+!.config/**/
+!.config/**/.gitkeep
+!data/**/
+!data/**/.gitkeep
