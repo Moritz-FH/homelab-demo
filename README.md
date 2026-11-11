@@ -6,6 +6,7 @@ Self Hosted Services Demo via Docker Compose.
 
 - [BentoPDF](./svc/bentopdf/README.md)
 - [Jellyfin](./svc/jellyfin/README.md)
+- [Syncthing](./svc/syncthing/README.md)
 
 ## Dependencies
 
