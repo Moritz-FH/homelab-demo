@@ -1,7 +1,3 @@
 networks:
   default:
     name: homelab-demo-net
-    ipam:
-      config:
-        - subnet: ${HOMELAB_DEMO_NET_PORTION}.0/24
-          gateway: ${HOMELAB_DEMO_NET_PORTION}.1

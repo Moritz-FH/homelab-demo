@@ -1,6 +1,13 @@
+networks:
+  net_bentopdf:
+    name: net_bentopdf
 services:
   bentopdf:
-    image: ghcr.io/alam00000/bentopdf:${BENTOPDF_VER}
     container_name: bentopdf
     hostname: bentopdf
+    image: ghcr.io/alam00000/bentopdf-simple:${BENTOPDF_VER:-latest}
+    networks:
+      net_bentopdf:
+    ports:
+      - ${BENTOPDF_HOST_IP:-0.0.0.0}:${BENTOPDF_HOST_PORT:-8080}:8080
     restart: unless-stopped

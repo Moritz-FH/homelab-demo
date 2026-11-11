@@ -11,7 +11,7 @@ ct:
     @docker container \
         ls \
         --all \
-        --format "table {{{{.Names}}\t{{{{.Command}}\t{{{{.Status}}\t{{{{.Image}}\t{{{{.ID}}"
+        --format "table {{{{.Names}}\t{{{{.Status}}"
 
 # List all images
 [group("docker")]

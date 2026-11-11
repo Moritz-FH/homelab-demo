@@ -28,6 +28,12 @@ up *SRV:
 down *SRV:
     @docker compose down {{ SRV }}
 
+# Pull service images
+[group("service")]
+[working-directory("svc")]
+pull *SRV:
+    @docker compose pull {{ SRV }}
+
 # Show the logs of given services
 [group("service")]
 [working-directory("svc")]
