@@ -1,7 +1,7 @@
-name: homelab-demo
-
 include:
-  - ./networks.yaml
+  - ${SVC_DIR:-.}/networks.yaml
   # Services
-  - ./bentopdf/compose.yaml
-  - ./jellyfin/compose.yaml
+  - ${SVC_DIR:-.}/bentopdf/compose.yaml
+  - ${SVC_DIR:-.}/jellyfin/compose.yaml
+  - ${SVC_DIR:-.}/syncthing/compose.yaml
+name: homelab-demo
